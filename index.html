@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Particles!</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- the fun starts here -->
+    <script src="js/bus.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/surface.js"></script>
+</head>
+<body>
+    <canvas id="viewport"></canvas>
+    <script>
+        window.onload = function() {
+            Engine.init({
+                "buffer": "viewport"
+            });
+            Engine.start();
+        }
+    </script>
+</body>
+</html>
